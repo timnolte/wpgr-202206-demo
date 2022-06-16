@@ -1,0 +1,8 @@
+.gitignore
+README.md
+composer.*
+wp-cli.yml
+.ddev
+.ddev/**
+node_modules
+node_modules/**
