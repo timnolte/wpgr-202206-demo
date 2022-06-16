@@ -1,0 +1,41 @@
+version: 2
+updates:
+- package-ecosystem: composer
+  directory: "."
+  schedule:
+    interval: daily
+    time: "10:00"
+    timezone: America/New_York
+  open-pull-requests-limit: 10
+  target-branch: live
+  reviewers:
+  - timnolte
+  assignees:
+  - timnolte
+  versioning-strategy: increase-if-necessary
+- package-ecosystem: composer
+  directory: "."
+  schedule:
+    interval: daily
+    time: "10:00"
+    timezone: America/New_York
+  open-pull-requests-limit: 10
+  target-branch: integration
+  reviewers:
+  - timnolte
+  assignees:
+  - timnolte
+  versioning-strategy: increase-if-necessary
+- package-ecosystem: composer
+  directory: "."
+  schedule:
+    interval: daily
+    time: "10:00"
+    timezone: America/New_York
+  open-pull-requests-limit: 10
+  target-branch: main
+  reviewers:
+  - timnolte
+  assignees:
+  - timnolte
+  versioning-strategy: increase-if-necessary
