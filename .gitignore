@@ -1,23 +1,60 @@
-# ignore everything in the root except the "wp-content" directory.
-!wp-content/
+### WP Starter
+.env
+.user.ini
+uploads.ini
+auth.json
+!web/robots.txt
+!web/wp-config.pantheon.php
+!web/wp-config.wpengine.php
+!web/wp-config.php
 
-# ignore everything in the "wp-content" directory, except:
-# "mu-plugins", "plugins", "themes" directory
-wp-content/*
-!wp-content/mu-plugins/
-!wp-content/plugins/
-!wp-content/themes/
+# Composer generated files
+.env.example
+web/wp
+web/wp-content/vendor
 
-# ignore these plugins
-wp-content/plugins/hello.php
+# Ignore themes/plugins with exceptions for custom code
+!web/wp-content/mu-plugins/
+!web/wp-content/plugins/
+web/wp-content/plugins/*
+!web/wp-content/themes/
+web/wp-content/themes/*
 
-# ignore specific themes
-wp-content/themes/twenty*/
+# Ignore Worfence logs
+web/wp-content/wflogs/
+
+# Ignore file uploads
+web/wp-content/uploads/*
+
+# Do not ignore WP-CFM files
+!web/wp-content/config/
+web/wp-content/config/*
 
 # ignore node dependency directories
 node_modules/
 
-# ignore log files and databases
-*.log
+# IDE files
+.buildpath
+.project
+.settings
+.idea
+.vscode
+
+# OS files
+.DS_Store
+Thumbs.db
+tags*
+
+# Archives & Development Files
+*.bz2
+*.zip
+*.tgz
+*.7z
+*.gz
 *.sql
 *.sqlite
+*.log
+*.txt
+
+# Local PHPCS configuration
+phpcs.xml

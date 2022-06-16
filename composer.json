@@ -1,0 +1,90 @@
+{
+  "name": "tim/wpgr-202206-demo",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Tim Nolte",
+      "email": "tim.nolte@ndigitals.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "require": {
+    "wecodemore/wpstarter": "^2.4",
+    "wpackagist-plugin/display-environment-type": "*",
+    "wpackagist-plugin/litespeed-cache": "*",
+    "wpackagist-plugin/wp-cfm": "*",
+    "wpackagist-theme/twentytwentytwo": "*"
+  },
+  "config": {
+    "vendor-dir": "web/wp-content/vendor",
+    "sort-packages": true,
+    "platform": {
+      "php": "8.0",
+      "ext-mysqli": "1.0.0"
+    },
+    "optimize-autoloader": true,
+    "allow-plugins": {
+      "composer/installers": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "johnpbloch/wordpress-core-installer": true
+    }
+  },
+  "scripts": {
+    "install-wp-starter": [
+      "WCM\\WPStarter\\Setup::run"
+    ],
+    "install-codestandards": [
+      "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
+    ],
+    "post-install-cmd": [
+      "@install-wp-starter",
+      "@install-codestandards"
+    ],
+    "post-update-cmd": [
+      "@install-wp-starter",
+      "@install-codestandards"
+    ],
+    "phpcs": "web/wp-content/vendor/bin/phpcs",
+    "lint": "@phpcs --runtime-set ignore_errors_on_exit true",
+    "phpcbf": "web/wp-content/vendor/bin/phpcbf",
+    "lint-fix": "@phpcbf",
+    "phpmd": "web/wp-content/vendor/bin/phpmd \"./web/wp-content/mu-plugins\",\"./web/wp-content/themes/gesso\" ansi .phpmd.xml.dist --exclude \"vendor/**\",\"node_modules/**\",\"source/**\""
+  },
+  "extra": {
+    "wordpress-install-dir": "web/wp",
+    "wordpress-content-dir": "web/wp-content",
+    "wpstarter": {
+      "prevent-overwrite": [
+        ".gitignore",
+        "web/wp-config.php",
+        "web/index.php"
+      ]
+    },
+    "installer-paths": {
+      "web/wp-content/plugins/{$name}": [
+        "type:wordpress-plugin"
+      ],
+      "web/wp-content/mu-plugins/{$name}": [
+        "type:wordpress-muplugin"
+      ],
+      "web/wp-content/themes/{$name}": [
+        "type:wordpress-theme"
+      ]
+    }
+  },
+  "require-dev": {
+    "php": ">=8.0.0",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+    "phpcompatibility/php-compatibility": "^9.3",
+    "phpcompatibility/phpcompatibility-wp": "^2.1",
+    "phpmd/phpmd": "^2.11",
+    "squizlabs/php_codesniffer": "^3.5",
+    "wp-coding-standards/wpcs": "^2.3",
+    "wpackagist-plugin/query-monitor": "*"
+  }
+}
