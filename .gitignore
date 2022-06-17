@@ -28,7 +28,6 @@ web/wp-content/uploads/*
 
 # Do not ignore WP-CFM files
 !web/wp-content/config/
-web/wp-content/config/*
 
 # ignore node dependency directories
 node_modules/

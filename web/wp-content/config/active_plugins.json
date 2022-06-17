@@ -1,0 +1,4 @@
+{
+    "active_plugins": "a:4:{i:0;s:31:\"query-monitor\/query-monitor.php\";i:1;s:53:\"display-environment-type\/display-environment-type.php\";i:2;s:35:\"litespeed-cache\/litespeed-cache.php\";i:3;s:17:\"wp-cfm\/wp-cfm.php\";}",
+    ".label": "Active Plugins"
+}
