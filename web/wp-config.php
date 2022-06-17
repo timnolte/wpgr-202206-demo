@@ -93,14 +93,14 @@ if ( ! isset( $_ENV['PANTHEON_ENVIRONMENT'] ) ) :
 	/**
 	 * Set unique authentication keys if not already set via environment variables.
 	 */
-	define( 'AUTH_KEY', '1Hn:PFS.|A!8lF`N]<,t}POiob%6G0mW&DZDTE.(Mfs!&)AB~-UWf,_CN9OsI15$' );
-	define( 'SECURE_AUTH_KEY', 'YsF-Qkb@`?2:)%XP|]] D7An]2 I@?BkQP2?ANLgytC85QQ_|<fc]~:,JOb=6zup' );
-	define( 'LOGGED_IN_KEY', '91G4sr?D+;p,JD=Dt; PCvlh-K[q;]--#G9,=6S8 jz`Y7T44oiAo*1dv{dH4suU' );
-	define( 'NONCE_KEY', 'f5h/39(Q{)`YIO/tz09[uh>}.!?{-#/[w-@p10}?I,2TBh$WG=vH=,R~c2I^CC9}' );
-	define( 'AUTH_SALT', 'mq^zUnZ;O]likGPZ|#4m6{g$p8j14NbOJ3N|iob4,otN[TzcWVW5S@4,|0a2ozxK' );
-	define( 'SECURE_AUTH_SALT', '[XpW[U9v_tr$ ^8)5npP1FW8N{w09*zKH3 cnd`hLJ,@v)2SzpdPc2%r27*EDd#Z' );
-	define( 'LOGGED_IN_SALT', 'I5vM.6D<G#M4WmcQU4A+f=Ktx.C;U8_8OS-:j8Se<m<^b9V_dJDt{!sGF:HD?bD]' );
-	define( 'NONCE_SALT', 'z;-qxd~}bUlmDf,Q4nGWVi!QyoA@vE/[V?^H!NZEPm dbc|rzcs9MoC[Upfd-RXB' );
+	define( 'AUTH_KEY', '7 j%z:TSVO.=)gT29E^5;yxSf!ds}c}4HHw|R4r`~wS.ur]l1)x>XUOdkX0~~29-' );
+	define( 'SECURE_AUTH_KEY', '_Tw!~`C1iPDfKR*>yCN?,Rd}O_?QIW).Jp>j_*VB%u=R@^.EAmHMFay $7Zo!-ip' );
+	define( 'LOGGED_IN_KEY', 'd7c=7EDVU.x).1Y0B^&6WPND(=NIaXfI>r1:3SU-p3:Ry&,{S.D=XXo6.lo^3[!Y' );
+	define( 'NONCE_KEY', 'S|,CdPOc W?hXWm?31R_Ka9KzKVW9{OHS=<fg`K)LF7219Y/p|~|BoJd*Dmi3p^+' );
+	define( 'AUTH_SALT', '[v p]]4dj_eFPH~M>FP^^u^0uia_C;+39P})bsC_t#wxq:Ey.f8NRWVe7JyUU^.;' );
+	define( 'SECURE_AUTH_SALT', '3W>LLWQ5)#A&Px&|-V.4=3d&n<{p.46|:|27G6#GN7G-Sy_isZV(G:.aa_9>#`ZV' );
+	define( 'LOGGED_IN_SALT', 'XeNb*%zF:r&R=}5&*8JwCfyneM>_B-_k]Hk@e0J9~20KWe,t~Kt7qvQiL[o<!%/;' );
+	define( 'NONCE_SALT', '._CgPNWQIQUBonPM)_]({bJC[$pqV=n4!5(6r*6kl,lI>VVLarawkXWDZfSVU@,/' );
 
 	$environment = getenv( 'WORDPRESS_ENV' );
 

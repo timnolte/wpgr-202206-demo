@@ -14,6 +14,8 @@
     }
   ],
   "require": {
+    "johnpbloch/wordpress": "~5.9.3",
+    "johnpbloch/wordpress-core": "~5.9.3",
     "wecodemore/wpstarter": "^2.4",
     "wpackagist-plugin/display-environment-type": "*",
     "wpackagist-plugin/litespeed-cache": "*",
