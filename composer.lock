@@ -152,20 +152,20 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "5.9.3",
+            "version": "5.9.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "8d0788bd5553c897b12bbf0e122c2fc5c4129914"
+                "reference": "243337798cf0e01abdcc5df842d988c3aefad7fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/8d0788bd5553c897b12bbf0e122c2fc5c4129914",
-                "reference": "8d0788bd5553c897b12bbf0e122c2fc5c4129914",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/243337798cf0e01abdcc5df842d988c3aefad7fa",
+                "reference": "243337798cf0e01abdcc5df842d988c3aefad7fa",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "5.9.3",
+                "johnpbloch/wordpress-core": "5.9.4",
                 "johnpbloch/wordpress-core-installer": "^1.0 || ^2.0",
                 "php": ">=5.6.20"
             },
@@ -194,20 +194,20 @@
                 "issues": "https://core.trac.wordpress.org/",
                 "source": "https://core.trac.wordpress.org/browser"
             },
-            "time": "2022-04-05T19:23:54+00:00"
+            "time": "2022-08-30T17:46:15+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "5.9.3",
+            "version": "5.9.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "455d38c7b7bcdce3e0a1c6108eccca8de1860361"
+                "reference": "2bc98d53c006ed608342e8ebc8c36f9fb9a0fa01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/455d38c7b7bcdce3e0a1c6108eccca8de1860361",
-                "reference": "455d38c7b7bcdce3e0a1c6108eccca8de1860361",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/2bc98d53c006ed608342e8ebc8c36f9fb9a0fa01",
+                "reference": "2bc98d53c006ed608342e8ebc8c36f9fb9a0fa01",
                 "shasum": ""
             },
             "require": {
@@ -215,7 +215,7 @@
                 "php": ">=5.6.20"
             },
             "provide": {
-                "wordpress/core-implementation": "5.9.3"
+                "wordpress/core-implementation": "5.9.4"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -242,7 +242,7 @@
                 "source": "https://core.trac.wordpress.org/browser",
                 "wiki": "https://codex.wordpress.org/"
             },
-            "time": "2022-04-05T19:23:48+00:00"
+            "time": "2022-08-30T17:46:11+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
