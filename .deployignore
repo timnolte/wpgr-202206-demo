@@ -1,10 +1,11 @@
-.deployignore
-.env.example
-.gitignore
-README.md
 composer.*
-wp-cli.yml
 .ddev
 .ddev/**
+.deployignore
+.env.example
+.github
+.github/**
+.gitignore
 node_modules
 node_modules/**
+README.md

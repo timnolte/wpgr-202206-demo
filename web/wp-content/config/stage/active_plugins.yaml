@@ -1,0 +1,11 @@
+active_plugins:
+    - query-monitor/query-monitor.php
+    - boldgrid-backup-premium/boldgrid-backup-premium.php
+    - boldgrid-backup/boldgrid-backup.php
+    - display-environment-type/display-environment-type.php
+    - health-check/health-check.php
+    - litespeed-cache/litespeed-cache.php
+    - sg-security/sg-security.php
+    - wp-cfm/wp-cfm.php
+.label: 'Active Plugins'
+.active_plugins_format: serialized
